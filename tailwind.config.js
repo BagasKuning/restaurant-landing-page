@@ -5,8 +5,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'best-seller': "url(./img/best-seller.jpg)"
+      },
       fontFamily: {
         'rubik': ['Rubik', 'sans-serif']
+      },
+      colors: {
+        'primary': "#028391",
+        'secondary': "#CDE8E5",
+        'white2': "#fffff"
       }
     },
   },
