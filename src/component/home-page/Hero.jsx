@@ -4,7 +4,7 @@ export default function Hero() {
       <div>
         <div className=" text-primary font-semibold text-7xl mb-2">
             <h1>CHILL CORNER</h1>
-            <h2>CAFE AND RESTO</h2>
+            <h2>CAFE AND RESTAURANT</h2>
         </div>
           <p>Come relax and enjoy delicious bites and brews at Chill Corner. Your perfect hangout spot awaits!</p>
       </div>
@@ -18,11 +18,15 @@ export default function Hero() {
 
           <div className="mt-6">
             <p>Price</p>
-            <b className="text-[#FFF56D] text-4xl font-medium">$12</b>
+            <b className=" text-yellow text-4xl font-medium">$12</b>
           </div>
         </div>
 
-        <div className={`flex-1 bg-best-seller bg-cover bg-center h-full`}/>
+        <div className={`flex-1 relative bg-best-seller bg-cover bg-center h-full`}>
+          <div className=" absolute right-0 -translate-y-7 -translate-x-16 bg-blue-500 p-10 rounded-full"/>
+          <div className=" absolute right-0 translate-y-5 -translate-x-2 bg-blue-400 p-7 rounded-full"/>
+          <div className=" absolute right-0 translate-y-16 translate-x-6 bg-blue-300 p-4 rounded-full"/>
+        </div>
       </div>
     </div>
   )
