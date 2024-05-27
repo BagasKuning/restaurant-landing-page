@@ -16,7 +16,7 @@ module.exports = {
         'secondary': "#CDE8E5",
         'white2': "#fffff",
         'yellow': "#FFF56D"
-      }
+      },
     },
   },
   plugins: [],
