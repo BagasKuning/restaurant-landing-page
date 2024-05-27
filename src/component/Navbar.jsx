@@ -9,13 +9,13 @@ export default function Navbar() {
         
         <ul className='flex gap-7'>
             <li>
-                <a href="#">Menu</a>
+                <a href="#home">Menu</a>
             </li>
             <li>
-                <a href="#">Our Service</a>
+                <a href="#service">Our Service</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
     </div>
