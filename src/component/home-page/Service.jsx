@@ -1,7 +1,23 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 export default function Service() {
     const [openIndex, setOpenIndex] = useState(null);
+    const [heights, setHeights] = useState([]);
+
+    const serviceRefs = useRef([]);
+
+    const calculateHeights = () => {
+        setHeights(serviceRefs.current.map(ref => ref.scrollHeight));
+    };
+
+    useEffect(() => {
+        calculateHeights();
+        window.addEventListener('resize', calculateHeights);
+        return () => {
+            window.removeEventListener('resize', calculateHeights);
+        };
+    }, []);
+
 
     const services = [
         {
@@ -27,20 +43,29 @@ export default function Service() {
     };
 
     return (
-        <div className='py-6 mt-6 flex flex-col items-center'>
-            <h1 className='text-center text-3xl font-semibold text-primary mb-4'>Our Service</h1>
+        <div className='py-6 sm:mt-7 mt-3 flex flex-col items-center'>
+            <h1 className='text-center text-3xl font-semibold text-primary mb-5'>Our Service</h1>
 
             {services.map((service, index) => (
-                <div key={index} className='mt-2 w-11/12 border-b-slate-400 border-b-2 pb-1 my-2'>
-                    <div className='inline-flex w-full items-center justify-between'>
-                        <h2 className='text-4xl'>{service.title}</h2>
-                        <button className='p-4 bg-blue-300 rounded-full relative' onClick={() => handleToggle(index)}>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className={`bi bi-arrow-up-short w-12 h-12 ${openIndex === index ? "rotate-180" : "rotate-0"}`} viewBox="0 0 16 16">
+                <div key={index} className='mt-2 w-11/12 border-b-slate-400 border-b-2 pb-2 my-2 cursor-pointer' onClick={() => handleToggle(index)}>
+                    <div className='flex w-full items-center justify-between gap-6'>
+                        <h2 className='text-2xl sm:text-3xl md:text-4xl'>
+                            {service.title}
+                        </h2>
+                        <button className='sm:p-3 p-2 bg-blue-300 rounded-full'>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className={`bi bi-arrow-up-short sm:w-12 sm:h-12 w-8 h-8 ${openIndex === index ? "rotate-180" : "rotate-0"} transition-all duration-150`} viewBox="0 0 16 16">
                                 <path fillRule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5" />
                             </svg>
                         </button>
                     </div>
-                    <div className={`overflow-hidden transition-all duration-500 ${openIndex === index ? 'max-h-screen' : 'max-h-0'}`}>
+                    <div
+                        ref={(el) => (serviceRefs.current[index] = el)}
+                        style={{
+                            height: openIndex === index ? `${heights[index]}px` : '0',
+                            opacity: openIndex === index ? '1' : '0',
+                        }}
+                        className={`overflow-hidden transition-all duration-300`}
+                    >
                         <p className='py-3'>
                             {service.desc}
                         </p>

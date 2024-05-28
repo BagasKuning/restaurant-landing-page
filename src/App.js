@@ -9,7 +9,7 @@ export default function App() {
       <Navbar/>
       <Hero/>
       <Service/>
-      <div className="h-[1000px]"/>
+      <div className="h-[700px] bg-slate-300"/>
     </div>
   )
 }
