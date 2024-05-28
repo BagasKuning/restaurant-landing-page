@@ -17,11 +17,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Rubik", sans-serif;
-  background: linear-gradient(160deg ,#fafafa, #d0deeb);
+  background: linear-gradient(160deg ,#fafafa, #d8e3ee);
   color: #31363F;
   background-attachment: fixed;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

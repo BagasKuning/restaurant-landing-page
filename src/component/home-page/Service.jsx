@@ -10,6 +10,10 @@ export default function Service() {
         setHeights(serviceRefs.current.map(ref => ref.scrollHeight));
     };
 
+    const handleToggle = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
     useEffect(() => {
         calculateHeights();
         window.addEventListener('resize', calculateHeights);
@@ -38,13 +42,9 @@ export default function Service() {
         },
     ];
 
-    const handleToggle = (index) => {
-        setOpenIndex(openIndex === index ? null : index);
-    };
-
     return (
-        <div className='py-6 sm:mt-7 mt-3 flex flex-col items-center'>
-            <h1 className='text-center text-3xl font-semibold text-primary mb-5'>Our Service</h1>
+        <div id='services' className='py-6 sm:mt-7 mt-3 flex flex-col items-center'>
+            <h1 className='text-center text-3xl font-semibold text-primary mb-5'>Our Services</h1>
 
             {services.map((service, index) => (
                 <div key={index} className='mt-2 w-11/12 border-b-slate-400 border-b-2 pb-2 my-2 cursor-pointer' onClick={() => handleToggle(index)}>
