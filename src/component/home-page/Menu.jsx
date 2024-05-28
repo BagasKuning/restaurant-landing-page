@@ -12,15 +12,15 @@ export default function Menu() {
                     </div>
 
 
-                    <p className='text-xl text-right font-serif tracking-widest mb-3'>
+                    <p className='text-yellow text-xl text-right font-serif tracking-widest mb-3'>
                         DRINKS
                     </p>
-                    <a href="">
-                        <div className='lg:h-[550px] sm:h-[440px] h-[180px] w-full bg-drink bg-cover bg-center'/>
+                    <a href="drinks-menu.png">
+                        <div className='lg:h-[550px] sm:h-[440px] h-[280px] w-full bg-drink bg-cover bg-center'/>
                     </a>
                     <div className='flex justify-between mt-3 gap-3'>
                         <span className='text-yellow sm:text-4xl text-3xl'>
-                            $3
+                            $5
                         </span>
                         <p className='text-right w-3/4 sm:text-base text-sm'>
                             The combination of bubbly soda and fresh lemon creates a refreshing and uplifting drink.
@@ -31,15 +31,15 @@ export default function Menu() {
 
 
                 <div className="flex-1 flex justify-center flex-col">
-                    <p className='text-xl text-right font-serif tracking-widest mb-3'>
+                    <p className='text-yellow text-xl text-right font-serif tracking-widest mb-3'>
                         FOODS
                     </p>
-                    <a href="">
-                        <div href="drink-menu.jpg" className='lg:h-[550px] sm:h-[440px] h-[180px] w-full bg-food bg-cover bg-center'/>
+                    <a href="foods-menu.png">
+                        <div href="drink-menu.jpg" className='lg:h-[550px] sm:h-[440px] h-[280px] w-full bg-food bg-cover bg-center'/>
                     </a>
                     <div className='flex justify-between mt-3 gap-3'>
                         <span className='text-yellow sm:text-4xl text-3xl'>
-                            $14
+                            $18
                         </span>
                         <p className='text-right w-3/4 sm:text-base text-sm'>
                             A special dish that combines fresh salmon fillet with tender spinach and a rich cream sauce.

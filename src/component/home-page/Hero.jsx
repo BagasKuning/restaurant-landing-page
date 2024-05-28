@@ -2,9 +2,9 @@ export default function Hero() {
   return (
     <div className="w-full lg:h-screen h-auto sm:py-8 py-14 flex flex-col justify-center sm:px-10 px-6">
       <div>
-        <div className=" text-primary font-semibold sm:mb-2 mb-7">
+        <div className=" text-primary font-semibold sm:mb-2 mb-5">
           <h1 className="sm:text-7xl text-6xl">CHILL CORNER</h1>
-          <h2 className="opacity-65 sm:text-7xl text-3xl sm:uppercase capitalize sm:mt-0 mt-1">cafe and restaurant</h2>
+          <h2 className="opacity-65 sm:text-7xl text-3xl uppercase sm:mt-0 mt-1">cafe and restaurant</h2>
         </div>
         <p>Come relax and enjoy delicious bites and brews at Chill Corner. Your perfect hangout spot awaits!</p>
       </div>
@@ -20,11 +20,11 @@ export default function Hero() {
 
           <div className="lg:mt-8 mt-12">
             <p>Price</p>
-            <b className=" text-yellow sm:text-4xl text-3xl font-medium">$9</b>
+            <b className=" text-yellow sm:text-4xl text-3xl font-medium">$11</b>
           </div>
         </div>
 
-        <div className={`flex-1 relative bg-best-seller bg-cover bg-center h-full rounded-t-md sm:rounded-t-none`}>
+        <div className={`flex-1 relative bg-best-seller bg-cover bg-center h-full`}>
           <div className=" absolute right-0 -translate-y-7 -translate-x-16 bg-blue-400 p-10 rounded-full" />
           <div className=" absolute right-0 translate-y-5 -translate-x-2 bg-blue-300 p-7 rounded-full" />
           <div className=" absolute right-0 translate-y-16 translate-x-6 bg-blue-200 p-4 rounded-full" />
