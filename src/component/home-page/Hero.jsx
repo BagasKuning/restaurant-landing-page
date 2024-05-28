@@ -10,7 +10,7 @@ export default function Hero() {
       </div>
 
       <div className="flex md:flex-row flex-col-reverse gap-3 lg:h-auto md:h-[360px] h-[680px] mt-16">
-        <div className="lg:w-1/4 md:w-2/5 w-full bg-[#202124] text-white p-5">
+        <div className="lg:w-1/4 md:w-2/5 w-full bg-[#2f3236] text-white p-5">
           <h3 className="text-secondary text-2xl font-medium lg:mb-3 mb-5">
             Best Seller
           </h3>
@@ -20,7 +20,7 @@ export default function Hero() {
 
           <div className="lg:mt-8 mt-12">
             <p>Price</p>
-            <b className=" text-yellow sm:text-4xl text-3xl font-medium">$12</b>
+            <b className=" text-yellow sm:text-4xl text-3xl font-medium">$9</b>
           </div>
         </div>
 

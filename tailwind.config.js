@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'best-seller': "url(./img/best-seller.jpg)"
+        'best-seller': "url(./img/best-seller.jpg)",
+        'drink': "url(./img/drink.jpg)",
+        'food': "url(./img/food.jpg)",
       },
       fontFamily: {
         'rubik': ['Rubik', 'sans-serif']
@@ -14,8 +16,8 @@ module.exports = {
       colors: {
         'primary': "#028391",
         'secondary': "#CDE8E5",
-        'white2': "#fffff",
-        'yellow': "#FFF56D"
+        'yellow': "#FFF56D",
+        'green': "#38bea1",
       },
     },
   },
