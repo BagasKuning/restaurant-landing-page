@@ -1,12 +1,12 @@
 export default function Hero() {
   return (
     <div className="w-full lg:h-screen h-auto sm:py-8 py-14 flex flex-col justify-center sm:px-10 px-6">
-      <div>
-        <div className=" text-primary font-semibold sm:mb-2 mb-5">
+      <div className=" sm:text-left text-center">
+        <div className=" text-primary font-semibold sm:mb-2 mb-9">
           <h1 className="sm:text-7xl text-6xl">CHILL CORNER</h1>
-          <h2 className="opacity-65 sm:text-7xl text-3xl uppercase sm:mt-0 mt-1">cafe and restaurant</h2>
+          <h2 className="opacity-65 sm:text-7xl text-2xl uppercase sm:mt-0 mt-3">cafe and restaurant</h2>
         </div>
-        <p>Come relax and enjoy delicious bites and brews at Chill Corner. Your perfect hangout spot awaits!</p>
+        <p className="sm:px-0 px-4">Come relax and enjoy delicious bites and brews at Chill Corner. Your perfect hangout spot awaits!</p>
       </div>
 
       <div className="flex md:flex-row flex-col-reverse gap-3 lg:h-auto md:h-[360px] h-[680px] mt-16">

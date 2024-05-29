@@ -1,6 +1,6 @@
 export default function Menu() {
     return (
-        <div id="menu" className="pt-14 pb-20 mb-10 bg-gradient-to-bl from-[#29779bc9] to-[#08374dc9] text-white">
+        <div id="menu" className="pt-14 pb-20 mb-16 bg-gradient-to-bl from-[#29779bc9] to-[#08374dc9] text-white">
             <div className=" xl:px-28 md:px-10 sm:px-6 px-3 flex gap-8">
                 <div className="flex-1">
                     <div className="mb-14">
@@ -12,7 +12,7 @@ export default function Menu() {
                     </div>
 
 
-                    <p className='text-yellow text-xl text-right font-serif tracking-widest mb-3'>
+                    <p className='text-yellow text-xl text-right font-serif tracking-widest mb-2'>
                         DRINKS
                     </p>
                     <a href="drinks-menu.png">
@@ -31,7 +31,7 @@ export default function Menu() {
 
 
                 <div className="flex-1 flex justify-center flex-col">
-                    <p className='text-yellow text-xl text-right font-serif tracking-widest mb-3'>
+                    <p className='text-yellow text-xl text-right font-serif tracking-widest mb-2'>
                         FOODS
                     </p>
                     <a href="foods-menu.png">
