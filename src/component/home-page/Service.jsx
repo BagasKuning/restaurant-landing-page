@@ -44,7 +44,7 @@ export default function Service() {
 
     return (
         <div id='services' className='py-6 sm:mt-7 mt-3 mb-10 flex flex-col items-center'>
-            <h1 className='text-center text-3xl font-semibold text-primary mb-5'>
+            <h1 className='text-center sm:text-3xl text-xl font-semibold text-primary mb-5'>
                 Our Services
             </h1>
 

@@ -13,7 +13,7 @@ const Ratings = () => {
             comment: "The food and drinks at here are fantastic, with a great variety and excellent flavors. The atmosphere is cozy and perfect for relaxing. However, I was a bit disappointed with the wait time for my order, as it took longer than expected due to the high volume of orders. Overall, still a great place to dine if you don't mind the wait",
             image: riview1,
             src: '',
-            star: 4.2,
+            star: 4.6,
         },
         {
             name: "Dwi Bagaskara",
@@ -52,37 +52,38 @@ const Ratings = () => {
 
     return (
         <div className='py-12'>
-            <h1 className='text-center text-3xl font-semibold text-primary mb-14'>
+            <h1 className='text-center sm:text-3xl text-xl font-semibold text-primary mb-14'>
                 People's Reviews
             </h1>
 
             {/* slide */}
-            <div className="relative w-full px-6 flex justify-between gap-16">
+            <div className="relative w-full sm:px-6 px-0 flex justify-between">
                 <button
-                    className="text-5xl text-primary"
+                    className="text-5xl text-primary sm:translate-x-0 translate-x-4"
                     onClick={prevSlide}
                 >
                     ❮
                 </button>
 
-                <div className="overflow-hidden flex gap-6">
+                <div className="overflow-hidden flex md:flex-row flex-col md:gap-6 gap-2 min-w-1/2 w-full justify-between lg:px-20 px-5">
 
-                    <div className='w-1/4 h-auto mx-auto rounded-md'>
+                    <div className='lg:w-1/4 w-1/2 h-auto mx-auto rounded-md'>
                         <img
                             src={ratings[currentIndex].image}
                             alt={`Slide ${currentIndex + 1}`}
-                            className=" rounded-md w-full h-full"
+                            className=" object-cover rounded-md w-full h-full"
                         />
                     </div>
-                    <div className='w-3/4 flex flex-col justify-center'>
+                    <div className='text-center md:w-3/4 w-full mx-auto flex flex-col justify-center md:items-start items-center'>
                         <h2 className='inline-block text-3xl capitalize font-semibold mb-1'>
                             {ratings[currentIndex].name}
                         </h2>
                         {ratings[currentIndex].src ? (
-                            <div className='leading-3'>
+                            <div className='leading-4 mt-2'>
                                 <span>
                                     Source:
                                 </span>
+                                <br className='md:hidden block'/>
                                 <a href={ratings[currentIndex].src} className='ml-2 text-purple-500'>
                                     {ratings[currentIndex].src}
                                 </a>
@@ -97,7 +98,7 @@ const Ratings = () => {
                                 </span>
                             </div>
                         )}
-                        <p className='mt-6'>
+                        <p className='mt-6 md:text-left text-center'>
                             " {ratings[currentIndex].comment} "
                         </p>
                     </div>
@@ -105,7 +106,7 @@ const Ratings = () => {
                 </div>
 
                 <button
-                    className="text-5xl text-primary"
+                    className="text-5xl text-primary sm:translate-x-0 -translate-x-4"
                     onClick={nextSlide}
                 >
                     ❯

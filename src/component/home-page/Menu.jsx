@@ -4,7 +4,7 @@ export default function Menu() {
             <div className=" xl:px-28 md:px-10 sm:px-6 px-3 flex gap-8">
                 <div className="flex-1">
                     <div className="mb-14">
-                        <h1 className='sm:text-6xl text-5xl font-semibold mb-3'>
+                        <h1 className='sm:text-6xl text-4xl font-semibold mb-3'>
                             Choose
                             <br /> Your Menu
                         </h1>
