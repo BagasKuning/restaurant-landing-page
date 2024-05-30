@@ -10,11 +10,11 @@ export default function Gallery() {
     
     return (
         <div className="mt-6 bg-gradient-to-bl from-[#29779bc9] to-[#08374dc9]">
-            <div className=" xl:px-28 md:px-10 sm:px-6 px-3 sm:pt-10 sm:pb-20 pt-6 pb-11">
-                <h1 className='text-center sm:text-3xl text-xl font-semibold text-white sm:mb-10 mb-5'>
+                <h1 className='bg-white text-primary px-3 whitespace-nowrap absolute left-1/2 -translate-x-1/2 -translate-y-1/2 text-center sm:text-4xl text-2xl font-semibold sm:mb-10 mb-5'>
                     Memories in Frames
                 </h1>
-                <div className="grid place-items-center grid-cols-12 sm:gap-3 gap-2">
+            <div className=" xl:px-28 md:px-10 sm:px-6 px-3 sm:py-20 py-11">
+                <div className="grid place-items-center grid-cols-12 sm:gap-3 gap-2 sm:h-auto h-[500px]">
                     <img
                         src={gallery1}
                         alt={``}
