@@ -51,7 +51,7 @@ const Ratings = () => {
     };
 
     return (
-        <div className='py-12'>
+        <div className='pt-12 pb-28'>
             <h1 className='text-center sm:text-3xl text-xl font-semibold text-primary mb-14'>
                 People's Reviews
             </h1>
@@ -75,7 +75,7 @@ const Ratings = () => {
                         />
                     </div>
                     <div className='text-center md:w-3/4 w-full mx-auto flex flex-col justify-center md:items-start items-center'>
-                        <h2 className='inline-block text-3xl capitalize font-semibold mb-1'>
+                        <h2 className='inline-block sm:text-3xl text-2xl capitalize font-semibold mb-1'>
                             {ratings[currentIndex].name}
                         </h2>
                         {ratings[currentIndex].src ? (
