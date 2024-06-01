@@ -13,8 +13,8 @@ export default function Gallery() {
                 <h1 className='bg-white text-primary px-3 whitespace-nowrap absolute left-1/2 -translate-x-1/2 -translate-y-1/2 text-center sm:text-4xl text-2xl font-semibold sm:mb-10 mb-5'>
                     Memories in Frames
                 </h1>
-            <div className=" xl:px-28 md:px-10 sm:px-6 px-3 sm:py-20 py-11">
-                <div className="grid place-items-center grid-cols-12 sm:gap-3 gap-2 sm:h-auto h-[500px]">
+            <div className=" xl:px-28 md:px-10 sm:px-6 px-3 py-20">
+                <div className="grid place-items-center grid-cols-12 sm:gap-3 gap-2 sm:h-auto h-[400px]">
                     <img
                         src={gallery1}
                         alt={``}
